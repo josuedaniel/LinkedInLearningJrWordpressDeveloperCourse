@@ -1,0 +1,161 @@
+/*
+Theme Name: Getslife
+Theme URI: https://getslife.com
+Author: Josue Martinez
+Author URI: https://squaredcare.com
+Description: A custom theme developed to help move vegetables and other goods
+Version: 1.0
+Text Domain: getslife
+
+*/
+
+/* setting up the basic elements - starter setup */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, 
+em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, car, dl, dt, 
+dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td {
+    border:0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin:0;
+    outline: 0;
+    padding: 0;
+    vertical-align: : baseline;
+
+}
+
+html {
+    font-size: 62.5%;
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background: #fff;
+
+}
+
+/* resetting the basic content blocks */
+article, aside, details, figcaption, figure, footer, header, main,
+nav, section {
+    display: block;
+
+}
+
+/* resetting the lists */
+
+ol, ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: seperate;
+    border-spacing: 0;
+}
+
+caption, th, td {
+    font-weight: normal;
+    text-align: left;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: "";
+}
+
+blockquote, q {
+    quotes: " "";
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+a:hover, a:active {
+    outline: 0;
+}
+
+a img {
+    border: 0;
+}
+
+.site-header {
+    width: 15%;
+    float: left;
+    height: auto;
+    background: #279090;
+    margin-right: 2.5%;
+    border-radius: 6px;
+}
+
+#page {
+    width: 1160px;
+    margin: 0 auto;
+    margin-top: 50px;
+    position: relative;
+    overflow: auto;
+
+}
+
+#primary {
+    width: 56%;
+    float: left;
+
+}
+
+/* Navigation */
+.main-navigation {
+    clear:both;
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+/* Alignment */
+.alignleft {
+    display: inline;
+    float: left;
+    margin-left: 1.5em;
+}
+
+.alignright {
+    display: inline;
+    float:right;
+    margin-right: 1.5em;
+}
+
+.aligncenter {
+    clear: both;
+    display: block;
+    margin: 0 auto;
+}
+
+.site-content .page, .site-content .post {
+    margin-bottom: 40px;
+    background-color: white;
+    border-radius: 6px;
+}
+
+.entry-header h1.entry-title {
+    text-align: center;
+}
+
+.site-content .entry-content {
+    padding: 10px 20px;
+}
+
+.site-footer {
+    clear: both;
+    padding: 20px;
+    text-align: right;
+
+}
