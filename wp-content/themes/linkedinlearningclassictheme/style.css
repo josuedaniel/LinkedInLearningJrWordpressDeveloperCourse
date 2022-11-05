@@ -1,0 +1,17 @@
+/*
+Theme Name:   LinkedIn Learning Classic Theme 
+Theme URI:    https://squaredcare.com
+Description:  Twenty Nineteen Child Theme
+Author:       Josue Martinez
+Author URI:   https://squaredcare.com
+Template:     twentynineteen
+Version:      1.0.0
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+Text Domain:  twentynineteenchild
+*/
+
+body{
+    background-color: grey;
+}
