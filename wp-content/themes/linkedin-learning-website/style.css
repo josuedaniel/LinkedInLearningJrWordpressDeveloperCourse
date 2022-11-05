@@ -13,3 +13,53 @@ Text Domain:  twentytwentythreechild
 */
 
 
+.header {
+    background-image: url('C:\xampp3\htdocs\ garden\wp-content\uploads\2022');
+}
+h1 {
+    background-color: rgb(247, 131, 85);
+    box-shadow: 10px 10px;
+    
+}
+
+.hpcov {
+    
+    border-radius: 15px;
+}
+
+.prepcd {
+    /*border: 2px solid black;*/
+    position: relative;
+
+}
+
+.container {
+    
+    border-radius: 11px;
+    position: absolute;
+    top: -10;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #74f86d;
+}
+
+.prepcd:hover .container {
+    opacity: 1;
+  }
+
+.ovlay {
+    color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
