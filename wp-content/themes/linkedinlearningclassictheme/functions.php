@@ -14,7 +14,7 @@ function my_theme_enqueue_styles() {
 }
 
 /**
- * Pluggable function from template-tags.php in the parent theme.
+ * Pluggable function from template-tags.php in the parent theme. Here we changed the words Newer Posts to Newer and Older Posts to Older
  */
 function twentynineteen_the_posts_navigation() {
     the_posts_pagination(
@@ -32,4 +32,22 @@ function twentynineteen_the_posts_navigation() {
             ),
         )
     );
+}
+
+
+//First we add the function that filters titles  and adds "Recipes: " for the recipes category
+function recipe_titles ($title, $id=null) {
+    if ( in_category('recipes', $id )) {
+        $title = "Recipe: " . $title;
+    }
+    return $title;
+}
+
+// Adds filter hook that tells Wordpress when the function should run and what data it should send it.
+add_filter('the_title', 'recipe_titles', 10, 2);
+
+// This empty function is a pluggable function from the parent theme that would post the author's name below every blog post. We have used the pluggable function here and kept it empty to remove the authors name. 
+
+function twentynineteen_posted_by() {
+    // do nothing
 }
