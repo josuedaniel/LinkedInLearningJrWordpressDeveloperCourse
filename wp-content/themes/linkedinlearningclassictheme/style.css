@@ -30,3 +30,23 @@ Text Domain:  twentynineteenchild
     width: auto;
     display: inline-block;
 }
+
+.site-content .error-404.not-found .page-header {
+    
+    margin-bottom: 2em;
+}
+
+.site-content .error-404.not-found .text {
+    display: block;
+    float: left;
+    margin-right: 2em;
+    width: 35%;
+    
+}
+
+.site-content .error-404.not-found .image {
+    display: block;
+    float: left;
+    margin: auto;
+    width: 35%;
+}
