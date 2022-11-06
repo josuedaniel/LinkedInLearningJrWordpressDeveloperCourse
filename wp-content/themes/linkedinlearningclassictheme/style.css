@@ -13,6 +13,16 @@ Text Domain:  twentynineteenchild
 */
 
 
+/* HR Element */
+.entry .entry-content .wp-block-separator,
+.entry .entry-content hr {
+    display: none;
+}
+
+.entry .entry-content hr:after {
+    display: none;
+}
+
 /* Author bio */
 
 .author-bio .author-heading .avatar {
