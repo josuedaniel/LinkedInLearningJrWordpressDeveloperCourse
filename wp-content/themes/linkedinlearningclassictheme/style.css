@@ -12,3 +12,11 @@ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, access
 Text Domain:  twentynineteenchild
 */
 
+
+/* Author bio */
+
+.author-bio .author-heading .avatar {
+    height: auto;
+    width: auto;
+    display: inline-block;
+}
