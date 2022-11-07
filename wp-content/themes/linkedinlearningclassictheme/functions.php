@@ -46,8 +46,31 @@ function recipe_titles ($title, $id=null) {
 // Adds filter hook that tells Wordpress when the function should run and what data it should send it.
 add_filter('the_title', 'recipe_titles', 10, 2);
 
+
+function twentynineteen_child_theme_setup() {
+    remove_action('widgets_init', 'twentynineteen_widgets_init');
+
+    // Adds a secondary menu to the child theme.
+    register_nav_menus(
+        array (
+            'menu-2' => __( 'Secondary', 'twentynineteen' ),
+        )
+        );
+
+    
+		
+}
+
+add_action('after_setup_theme', 'twentynineteen_child_theme_setup');
+
+
+
+
+
 // This empty function is a pluggable function from the parent theme that would post the author's name below every blog post. We have used the pluggable function here and kept it empty to remove the authors name. 
 
 function twentynineteen_posted_by() {
     // do nothing
 }
+
+
