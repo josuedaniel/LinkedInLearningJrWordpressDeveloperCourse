@@ -2,15 +2,14 @@
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 function my_theme_enqueue_styles() {
 
-    wp_enqueue_style( 'parent-style', 
-    get_template_directory_uri() . '/style.css' 
-);
+    wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
 
-    wp_enqueue_style( 'child-style', 
-        get_stylesheet_directory_uri(). '/style.css',
-        array('parent-style'), 
-        wp_get_theme()->get('Version') 
-    );
+    wp_enqueue_style( 'child-style', get_stylesheet_directory_uri(). '/style.css', array('parent-style'), wp_get_theme()->get('Version') );
+    
+    wp_enqueue_style( 'twentynineteen-child-theme-fonts', 
+    'https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap' );
+
+    
 }
 
 /**
@@ -48,7 +47,9 @@ add_filter('the_title', 'recipe_titles', 10, 2);
 
 
 function twentynineteen_child_theme_setup() {
-    remove_action('widgets_init', 'twentynineteen_widgets_init');
+    
+    // Remove the theme widgets from showing up
+    //remove_action('widgets_init', 'twentynineteen_widgets_init');
 
     // Adds a secondary menu to the child theme.
     register_nav_menus(
